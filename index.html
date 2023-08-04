@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enneagram Quiz</title>
+    <link rel="stylesheet" href="stylesq.css">
+	 <script>
+        window.onload = function() {
+            var codeInputs = document.querySelectorAll("input[type='number']");
+            codeInputs.forEach(function(input) {
+                input.addEventListener("input", function() {
+                    if (input.value.length > 4) {
+                        input.value = input.value.slice(0, 4);
+                    }
+                });
+            });
+        };
+    </script>
+</head>
+<body>
+    <h1>Enneagram Quiz</h1>
+    <form
+  action="https://formspree.io/f/mvojzyyd"
+  method="POST">
+  
+  <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+		<label for="referral">Referral Code:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="code1" >4-Digit Save Code 1:</label><br>
+        <input type="number" id="code1" name="code1" min="1000" max="9999" required><br>
+        <label for="code2">4-Digit Save Code 2:</label><br>
+        <input type="number" id="code2" name="code2" min="1000" max="9999" required><br>
+        <label for="code3">4-Digit Save Code 3:</label><br>
+        <input type="number" id="code3" name="code3" min="1000" max="9999" required><br>
+        <label for="code4">4-Digit Save Code 4:</label><br>
+        <input type="number" id="code4" name="code4" min="1000" max="9999" required><br>
+        <label for="code5">4-Digit Save Code 5:</label><br>
+        <input type="number" id="code5" name="code5" min="1000" max="9999" required><br>
+        <div class="question">
+            <p><strong>1. I've been</strong></p>
+            <input type="radio" id="q1-1" name="q1" value="1">
+            <label for="q1-1">romantic and imaginative.</label><br>
+            <input type="radio" id="q1-2" name="q1" value="2">
+            <label for="q1-2">pragmatic and down to earth.</label><hr>
+        </div>
+
+        <div class="question">
+            <p><strong>2. I have tended to</strong></p>
+            <input type="radio" id="q2-1" name="q2" value="1">
+            <label for="q2-1">take on confrontations.</label><br>
+            <input type="radio" id="q2-2" name="q2" value="2">
+            <label for="q2-2">avoid confrontations.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>3. I have typically been</strong></p>
+            <input type="radio" id="q3-1" name="q3" value="1">
+            <label for="q36-1">diplomatic, charming, and ambitious.</label><br>
+            <input type="radio" id="q3-2" name="q3" value="2">
+            <label for="q36-2">direct, formal, and idealistic.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>4. I have tended to be</strong></p>
+            <input type="radio" id="q4-1" name="q4" value="1">
+            <label for="q1-1">focused and intense.</label><br>
+            <input type="radio" id="q4-2" name="q4" value="2">
+            <label for="q1-2">spontaneous and fun-loving.</label><hr>
+        </div>
+
+        <div class="question">
+            <p><strong>5. I have been a</strong></p>
+            <input type="radio" id="q5-1" name="q5" value="1">
+            <label for="q2-1">hospitable person and have enjoyed welcoming new friends into my life.</label><br>
+            <input type="radio" id="q5-2" name="q5" value="2">
+            <label for="q2-2">private person and have not mixed much with others.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>6. Generally, it's been</strong></p>
+            <input type="radio" id="q6-1" name="q6" value="1">
+            <label for="q36-1">easy to "get a rise" out of me.</label><br>
+            <input type="radio" id="q6-2" name="q6" value="2">
+            <label for="q36-2">difficult to "get a rise" out of me.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>7. I've been more of a</strong></p>
+            <input type="radio" id="q7-1" name="q7" value="1">
+            <label for="q1-1">"street-smart" survivor.</label><br>
+            <input type="radio" id="q7-2" name="q7" value="2">
+            <label for="q1-2">"high-minded" idealist.</label><hr>
+        </div>
+
+        <div class="question">
+            <p><strong>8. I have</strong></p>
+            <input type="radio" id="q8-1" name="q8" value="1">
+            <label for="q2-1">needed to show affection to people.</label><br>
+            <input type="radio" id="q8-2" name="q8" value="2">
+            <label for="q2-2">preferred to maintain a certain distance with people.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>9. When presented with a new experience, I've usually asked myself if it would be</strong></p>
+            <input type="radio" id="q9-1" name="q9" value="1">
+            <label for="q36-1">useful to me.</label><br>
+            <input type="radio" id="q9-2" name="q9" value="2">
+            <label for="q36-2">enjoyable.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>10. I have tended to focus too much on</strong></p>
+            <input type="radio" id="q10-1" name="q10" value="1">
+            <label for="q1-1">myself.</label><br>
+            <input type="radio" id="q10-2" name="q10" value="2">
+            <label for="q1-2">others.</label><hr>
+        </div>
+
+        <div class="question">
+            <p><strong>11. Others have depended on my</strong></p>
+            <input type="radio" id="q11-1" name="q11" value="1">
+            <label for="q2-1">insight and knowledge.</label><br>
+            <input type="radio" id="q11-2" name="q11" value="2">
+            <label for="q2-2">strength and decisiveness.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>12. I have come across as being too</strong></p>
+            <input type="radio" id="q12-1" name="q12" value="1">
+            <label for="q36-1">unsure of myself.</label><br>
+            <input type="radio" id="q12-2" name="q12" value="2">
+            <label for="q36-2">sure of myself.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>13. I have been more</strong></p>
+            <input type="radio" id="q13-1" name="q13" value="1">
+            <label for="q1-1">relationship-oriented than goal-oriented.</label><br>
+            <input type="radio" id="q13-2" name="q13" value="2">
+            <label for="q1-2">goal-oriented than relationship-oriented.</label><hr>
+        </div>
+
+        <div class="question">
+            <p><strong>14. I have</strong></p>
+            <input type="radio" id="q14-1" name="q14" value="1">
+            <label for="q2-1">not been able to speak up for myself very well.</label><br>
+            <input type="radio" id="q14-2" name="q14" value="2">
+            <label for="q2-2">been outspoken—I've said what others wished they had the nerve to say.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>15. It's been difficult for me to</strong></p>
+            <input type="radio" id="q15-1" name="q15" value="1">
+            <label for="q36-1">stop considering alternatives and do something definite.</label><br>
+            <input type="radio" id="q15-2" name="q15" value="2">
+            <label for="q36-2">take it easy and be more flexible.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>16. I have tended to be</strong></p>
+            <input type="radio" id="q16-1" name="q16" value="1">
+            <label for="q1-1">hesitant and procrastinating.</label><br>
+            <input type="radio" id="q16-2" name="q16" value="2">
+            <label for="q1-2">bold and domineering.</label><hr>
+        </div>
+
+        <div class="question">
+            <p><strong>17. My</strong></p>
+            <input type="radio" id="q17-1" name="q17" value="1">
+            <label for="q2-1">reluctance to get too involved has gotten me into trouble with people.</label><br>
+            <input type="radio" id="q17-2" name="q17" value="2">
+            <label for="q2-2">eagerness to have people depend on me has gotten me into trouble with them.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>18. Usually, I have</strong></p>
+            <input type="radio" id="q18-1" name="q18" value="1">
+            <label for="q36-1">been able to put my feelings aside to get the job done.</label><br>
+            <input type="radio" id="q18-2" name="q18" value="2">
+            <label for="q36-2">needed to work through my feelings before I could act.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>19. Generally, I have been</strong></p>
+            <input type="radio" id="q19-1" name="q19" value="1">
+            <label for="q1-1">methodical and cautious.</label><br>
+            <input type="radio" id="q19-2" name="q19" value="2">
+            <label for="q1-2">adventurous and taken risks.</label><hr>
+        </div>
+
+        <div class="question">
+            <p><strong>20. I have tended to be a</strong></p>
+            <input type="radio" id="q20-1" name="q20" value="1">
+            <label for="q2-1">supportive, giving person who enjoys the company of others.</label><br>
+            <input type="radio" id="q20-2" name="q20" value="2">
+            <label for="q2-2">serious, reserved person who likes discussing issues.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>21. I've often felt the need to</strong></p>
+            <input type="radio" id="q21-1" name="q21" value="1">
+            <label for="q36-1">be a "pillar of strength."</label><br>
+            <input type="radio" id="q21-2" name="q21" value="2">
+            <label for="q36-2">perform perfectly.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>22. I've typically been interested in</strong></p>
+            <input type="radio" id="q22-1" name="q22" value="1">
+            <label for="q1-1">asking tough questions and maintaining my independence.</label><br>
+            <input type="radio" id="q22-2" name="q22" value="2">
+            <label for="q1-2">maintaining my stability and peace of mind.</label><hr>
+        </div>
+
+        <div class="question">
+            <p><strong>23. I've been too</strong></p>
+            <input type="radio" id="q23-1" name="q23" value="1">
+            <label for="q2-1">hard-nosed and skeptical.</label><br>
+            <input type="radio" id="q23-2" name="q23" value="2">
+            <label for="q2-2">soft-hearted and sentimental.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>24. I've often worried that</strong></p>
+            <input type="radio" id="q24-1" name="q24" value="1">
+            <label for="q36-1">I'm missing out on something better.</label><br>
+            <input type="radio" id="q24-2" name="q24" value="2">
+            <label for="q36-2">if I let down my guard, someone will take advantage of me.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>25. My habit of</strong></p>
+            <input type="radio" id="q25-1" name="q25" value="1">
+            <label for="q1-1">being "stand-offish" has annoyed people.</label><br>
+            <input type="radio" id="q25-2" name="q25" value="2">
+            <label for="q1-2">telling people what to do has annoyed people.</label><hr>
+        </div>
+
+        <div class="question">
+            <p><strong>26. Usually, when troubles have gotten to me, I have</strong></p>
+            <input type="radio" id="q26-1" name="q26" value="1">
+            <label for="q2-1">been able to "tune them out."</label><br>
+            <input type="radio" id="q26-2" name="q26" value="2">
+            <label for="q2-2">treated myself to something I've enjoyed.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>27. I have</strong></p>
+            <input type="radio" id="q27-1" name="q27" value="1">
+            <label for="q36-1">depended upon my friends and they have known that they can depend on me.</label><br>
+            <input type="radio" id="q27-2" name="q27" value="2">
+            <label for="q36-2">not depended on people; I have done things on my own.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>28. I have tended to be</strong></p>
+            <input type="radio" id="q28-1" name="q28" value="1">
+            <label for="q2-1">detached and preoccupied.</label><br>
+            <input type="radio" id="q28-2" name="q28" value="2">
+            <label for="q2-2">moody and self-absorbed.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>29. I have liked to</strong></p>
+            <input type="radio" id="q29-1" name="q29" value="1">
+            <label for="q36-1">challenge people and "shake them up."</label><br>
+            <input type="radio" id="q29-2" name="q29" value="2">
+            <label for="q36-2">comfort people and calm them down.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>30. I have generally been an</strong></p>
+            <input type="radio" id="q30-1" name="q30" value="1">
+            <label for="q1-1">outgoing, sociable person.</label><br>
+            <input type="radio" id="q30-2" name="q30" value="2">
+            <label for="q1-2">earnest, self-disciplined person.</label><hr>
+        </div>
+
+        <div class="question">
+            <p><strong>31. I've usually</strong></p>
+            <input type="radio" id="q31-1" name="q31" value="1">
+            <label for="q2-1">been shy about showing my abilities.</label><br>
+            <input type="radio" id="q31-2" name="q31" value="2">
+            <label for="q2-2">liked to let people know what I can do well.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>32.</strong></p>
+            <input type="radio" id="q32-1" name="q32" value="1">
+            <label for="q36-1">Pursuing my personal interests has been more important to me than having comfort and security.</label><br>
+            <input type="radio" id="q32-2" name="q32" value="2">
+            <label for="q36-2">Having comfort and security has been more important to me than pursuing my personal interests.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>33. When I've had conflict with others, I've</strong></p>
+            <input type="radio" id="q33-1" name="q33" value="1">
+            <label for="q1-1">tended to withdraw.</label><br>
+            <input type="radio" id="q33-2" name="q33" value="2">
+            <label for="q1-2">rarely backed down.</label><hr>
+        </div>
+
+        <div class="question">
+            <p><strong>34. I have</strong></p>
+            <input type="radio" id="q34-1" name="q34" value="1">
+            <label for="q2-1">given in too easily and let others push me around.</label><br>
+            <input type="radio" id="q34-2" name="q34" value="2">
+            <label for="q2-2">been too uncompromising and demanding with others.</label><hr>
+        </div>
+		
+		<div class="question">
+            <p><strong>35. I've been appreciated for my</strong></p>
+            <input type="radio" id="q35-1" name="q35" value="1">
+            <label for="q36-1">unsinkable spirit and great sense of humor.</label><br>
+            <input type="radio" id="q35-2" name="q35" value="2">
+            <label for="q36-2">quiet strength and exceptional generosity.</label><hr>
+        </div>
+
+        <div class="question">
+            <p><strong>36. Much of my success has been</strong></p>
+            <input type="radio" id="q36-1" name="q36" value="1">
+            <label for="q36-1">due to my talent for making a favorable impression.</label><br>
+            <input type="radio" id="q36-2" name="q36" value="2">
+            <label for="q36-2">achieved despite my lack of interest in developing "interpersonal skills."</label><hr>
+        </div>
+
+        <input type="submit" value="Submit Quiz">
+    </form>
+</body>
+</html>
